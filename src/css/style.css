@@ -6,6 +6,7 @@
   --text-color-light-grey: #EFEFEF;
   --text-color-dark-grey: #252525;
   --text-color-grey: #4A4A4A;
+  --background-color-grey-footer: #1A1A1A;
   --text-color-grey-footer: #888888;
   --background-color-black: #000000
 
@@ -355,7 +356,6 @@ body {
     }
 
     .announce__text {
-      font-family: $ font-family;
       font-weight: 500;
       font-size: 23px;
       text-align: center;
@@ -363,3 +363,43 @@ body {
     }
   }
 }
+
+.footer {
+  padding: 58px;
+  background-color: var(--background-color-grey-footer);
+
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    color: var(--text-color-grey-footer);
+
+  }
+
+  a:visited {
+    color: var(--text-color-grey-footer);
+  }
+
+  .footer__links {
+    display: flex;
+    gap: 5px;
+  }
+
+  a {
+    color: var(--text-color-grey-footer);
+  }
+
+  .footer__phone {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
